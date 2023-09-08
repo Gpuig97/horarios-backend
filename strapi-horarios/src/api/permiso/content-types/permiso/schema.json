@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "permisos",
+  "info": {
+    "singularName": "permiso",
+    "pluralName": "permisos",
+    "displayName": "permisos"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "module": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::module.module"
+    },
+    "rol": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::rol.rol"
+    },
+    "create": {
+      "type": "boolean"
+    },
+    "read": {
+      "type": "boolean"
+    },
+    "update": {
+      "type": "boolean"
+    },
+    "delete": {
+      "type": "boolean"
+    }
+  }
+}

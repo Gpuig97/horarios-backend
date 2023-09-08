@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "unavailable_dates_by_agents",
+  "info": {
+    "singularName": "unavailable-dates-by-agent",
+    "pluralName": "unavailable-dates-by-agents",
+    "displayName": "unavailable dates by agent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date_from": {
+      "type": "date"
+    },
+    "date_to": {
+      "type": "date"
+    },
+    "observations": {
+      "type": "richtext"
+    },
+    "agents": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::agent.agent"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "site": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::site.site"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "kind": "collectionType",
+  "collectionName": "groups",
+  "info": {
+    "singularName": "group",
+    "pluralName": "groups",
+    "displayName": "GROUPS",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "internal_code": {
+      "type": "string"
+    },
+    "max_agents": {
+      "type": "integer"
+    },
+    "observations": {
+      "type": "richtext"
+    },
+    "area": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::area.area"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "site": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::site.site"
+    },
+    "monday": {
+      "type": "boolean"
+    },
+    "tuesday": {
+      "type": "boolean"
+    },
+    "wednesday": {
+      "type": "boolean"
+    },
+    "thursday": {
+      "type": "boolean"
+    },
+    "friday": {
+      "type": "boolean"
+    },
+    "saturday": {
+      "type": "boolean"
+    },
+    "sunday": {
+      "type": "boolean"
+    },
+    "monday_order": {
+      "type": "integer"
+    },
+    "tuesday_order": {
+      "type": "integer"
+    },
+    "wednesday_order": {
+      "type": "integer"
+    },
+    "thursday_order": {
+      "type": "integer"
+    },
+    "friday_order": {
+      "type": "integer"
+    },
+    "saturday_order": {
+      "type": "integer"
+    },
+    "sunday_order": {
+      "type": "integer"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "view_monday_rest": {
+      "type": "boolean"
+    },
+    "view_tuesday_rest": {
+      "type": "boolean"
+    },
+    "view_wednesday_rest": {
+      "type": "boolean"
+    },
+    "view_thursday_rest": {
+      "type": "boolean"
+    },
+    "view_friday_rest": {
+      "type": "boolean"
+    },
+    "view_saturday_rest": {
+      "type": "boolean"
+    },
+    "view_sunday_rest": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+version: '3'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: strapi_phorarios
+    ports:
+      - 1337:1337
+    volumes:
+      - ./cert:/app/cert
+      - ./strapi-horarios:/app
+    environment:
+      - HTTPS=true
+      - SSL_CERT=/app/cert/NetlifeNetEc1.crt.pem
+      - SSL_KEY=/app/cert/netlifeNetEc1.key.pem
+      - DATABASE_HOST=172.24.66.5
+      - DATABASE_PORT=3306
+      - DATABASE_NAME=horario_netlife_app
+      - DATABASE_USERNAME=root
+      - DATABASE_PASSWORD=N3tl1f32023!

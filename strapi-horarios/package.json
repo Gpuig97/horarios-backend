@@ -1,0 +1,31 @@
+{
+  "name": "horarios-strapi-mysql-js",
+  "private": true,
+  "version": "0.1.0",
+  "description": "NL App de Horarios",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.3.3",
+    "@strapi/plugin-users-permissions": "4.3.3",
+    "@strapi/strapi": "4.3.3",
+    "cross-env": "^7.0.3",
+    "mysql": "2.18.1"
+  },
+  "author": {
+    "name": "Guillermo Puig"
+  },
+  "strapi": {
+    "uuid": "bca969de-1cde-48ee-94fc-297910ccd41b"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

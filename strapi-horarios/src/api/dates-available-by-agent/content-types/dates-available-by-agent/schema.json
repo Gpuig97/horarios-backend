@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dates_available_by_agents",
+  "info": {
+    "singularName": "dates-available-by-agent",
+    "pluralName": "dates-available-by-agents",
+    "displayName": "dates available by agent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date_from": {
+      "type": "date"
+    },
+    "date_to": {
+      "type": "date"
+    },
+    "observations": {
+      "type": "richtext"
+    },
+    "agent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::agent.agent"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "site": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::site.site"
+    }
+  }
+}

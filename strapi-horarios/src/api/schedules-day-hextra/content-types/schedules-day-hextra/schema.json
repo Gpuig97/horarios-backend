@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedules_day_hextras",
+  "info": {
+    "singularName": "schedules-day-hextra",
+    "pluralName": "schedules-day-hextras",
+    "displayName": "SCHEDULES DAY HEXTRAS",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "schedule": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::schedule.schedule"
+    },
+    "date": {
+      "type": "date"
+    },
+    "time_from": {
+      "type": "time"
+    },
+    "time_to": {
+      "type": "time"
+    },
+    "observations": {
+      "type": "richtext"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "groups_and_agent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::groups-and-agent.groups-and-agent"
+    },
+    "shift": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::shift.shift"
+    },
+    "agents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::agent.agent"
+    },
+    "lunch_time": {
+      "type": "integer"
+    }
+  }
+}

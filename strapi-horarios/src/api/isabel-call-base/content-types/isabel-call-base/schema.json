@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "isabel_call_bases",
+  "info": {
+    "singularName": "isabel-call-base",
+    "pluralName": "isabel-call-bases",
+    "displayName": "ISABEL CALL BASE",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "time": {
+      "type": "time"
+    },
+    "cabinas_6022_manejadas": {
+      "type": "integer"
+    },
+    "soporte_5900_manejadas": {
+      "type": "integer"
+    },
+    "cabinas_6022_abandonadas": {
+      "type": "integer"
+    },
+    "soporte_5900_abandonadas": {
+      "type": "integer"
+    },
+    "atc_6028_manejadas": {
+      "type": "integer"
+    },
+    "cobranzas_5903_manejadas": {
+      "type": "integer"
+    },
+    "atc_6028_abandonadas": {
+      "type": "integer"
+    },
+    "cobranzas_5903_abandonadas": {
+      "type": "integer"
+    },
+    "area": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::area.area"
+    },
+    "manejadas": {
+      "type": "integer"
+    },
+    "abandonadas": {
+      "type": "integer"
+    }
+  }
+}

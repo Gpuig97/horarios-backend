@@ -1,0 +1,62 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coordinators",
+  "info": {
+    "singularName": "coordinator",
+    "pluralName": "coordinators",
+    "displayName": "coordinators",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "names": {
+      "type": "string"
+    },
+    "observations": {
+      "type": "richtext"
+    },
+    "surnames": {
+      "type": "string"
+    },
+    "identification": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "password": {
+      "type": "password"
+    },
+    "login_nl": {
+      "type": "boolean"
+    },
+    "username": {
+      "type": "string"
+    },
+    "sites": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::site.site"
+    },
+    "access_system": {
+      "type": "boolean"
+    },
+    "rol": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::rol.rol"
+    }
+  }
+}

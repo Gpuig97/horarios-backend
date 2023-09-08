@@ -1,0 +1,93 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shifts",
+  "info": {
+    "singularName": "shift",
+    "pluralName": "shifts",
+    "displayName": "SHIFTS",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "time_from": {
+      "type": "time"
+    },
+    "time_to": {
+      "type": "time"
+    },
+    "type_of_shift": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::type-of-shift.type-of-shift"
+    },
+    "lunch_time": {
+      "type": "integer"
+    },
+    "observations": {
+      "type": "richtext"
+    },
+    "velada": {
+      "type": "boolean"
+    },
+    "horas_extras": {
+      "type": "boolean"
+    },
+    "place": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::place.place"
+    },
+    "num_agentes_necesarios": {
+      "type": "integer"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "site": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::site.site"
+    },
+    "type_of_agents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::type-of-agent.type-of-agent"
+    },
+    "soporte": {
+      "type": "boolean"
+    },
+    "color": {
+      "type": "string"
+    },
+    "monday_num_agents": {
+      "type": "integer"
+    },
+    "tuesday_num_agents": {
+      "type": "integer"
+    },
+    "wednesday_num_agents": {
+      "type": "integer"
+    },
+    "thursday_num_agents": {
+      "type": "integer"
+    },
+    "friday_num_agents": {
+      "type": "integer"
+    },
+    "saturday_num_agents": {
+      "type": "integer"
+    },
+    "sunday_num_agents": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

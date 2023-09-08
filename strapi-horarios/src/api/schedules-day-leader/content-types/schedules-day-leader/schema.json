@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedules_day_leaders",
+  "info": {
+    "singularName": "schedules-day-leader",
+    "pluralName": "schedules-day-leaders",
+    "displayName": "SCHEDULES DAY LEADERS",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "schedule": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::schedule.schedule"
+    },
+    "tipo_lider": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tipo-lider.tipo-lider"
+    },
+    "date": {
+      "type": "date"
+    },
+    "name": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "groups_and_agent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::groups-and-agent.groups-and-agent"
+    }
+  }
+}

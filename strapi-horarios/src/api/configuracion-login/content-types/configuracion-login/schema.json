@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "configuracion_logins",
+  "info": {
+    "singularName": "configuracion-login",
+    "pluralName": "configuracion-logins",
+    "displayName": "CONFIGURACION LOGIN"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "observations": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedule_turn_agents",
+  "info": {
+    "singularName": "schedule-turn-agent",
+    "pluralName": "schedule-turn-agents",
+    "displayName": "schedule_turn_agents"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "schedules_day_turn": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::schedules-day-turn.schedules-day-turn"
+    },
+    "groups_and_agent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::groups-and-agent.groups-and-agent"
+    }
+  }
+}

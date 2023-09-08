@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedules_day_hsuplementarias",
+  "info": {
+    "singularName": "schedules-day-hsuplementaria",
+    "pluralName": "schedules-day-hsuplementarias",
+    "displayName": "SCHEDULES DAY HSUPLEMENTARIAS",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "schedule": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::schedule.schedule"
+    },
+    "date": {
+      "type": "date"
+    },
+    "time_from": {
+      "type": "time"
+    },
+    "time_to": {
+      "type": "time"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "observations": {
+      "type": "richtext"
+    },
+    "groups_and_agent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::groups-and-agent.groups-and-agent"
+    },
+    "agents": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::agent.agent"
+    }
+  }
+}

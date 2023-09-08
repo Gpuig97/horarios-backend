@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "configuracion_horas_nocturnas",
+  "info": {
+    "singularName": "configuracion-horas-nocturna",
+    "pluralName": "configuracion-horas-nocturnas",
+    "displayName": "CONFIGURACION HORAS NOCTURNAS",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hora_desde": {
+      "type": "time"
+    },
+    "hora_hasta": {
+      "type": "time"
+    },
+    "area": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::area.area"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "site": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::site.site"
+    }
+  }
+}

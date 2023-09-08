@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rules_days",
+  "info": {
+    "singularName": "rule-day",
+    "pluralName": "rules-days",
+    "displayName": "RULES DAYS",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "monday": {
+      "type": "boolean"
+    },
+    "tuesday": {
+      "type": "boolean"
+    },
+    "wednesday": {
+      "type": "boolean"
+    },
+    "thursday": {
+      "type": "boolean"
+    },
+    "friday": {
+      "type": "boolean"
+    },
+    "saturday": {
+      "type": "boolean"
+    },
+    "sunday": {
+      "type": "boolean"
+    },
+    "observations": {
+      "type": "richtext"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "site": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::site.site"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "skip_order_group": {
+      "type": "boolean"
+    }
+  }
+}

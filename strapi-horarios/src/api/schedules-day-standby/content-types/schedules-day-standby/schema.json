@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "schedules_day_standbies",
+  "info": {
+    "singularName": "schedules-day-standby",
+    "pluralName": "schedules-day-standbies",
+    "displayName": "SCHEDULES DAY STANDBY",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "schedule": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::schedule.schedule"
+    },
+    "groups_and_agent": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::groups-and-agent.groups-and-agent"
+    },
+    "tipo_standby": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tipo-standby.tipo-standby"
+    },
+    "name": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

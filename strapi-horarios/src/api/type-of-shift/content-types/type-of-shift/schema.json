@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_of_shifts",
+  "info": {
+    "singularName": "type-of-shift",
+    "pluralName": "type-of-shifts",
+    "displayName": "TYPE OF SHIFTS",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "internal_code": {
+      "type": "string"
+    },
+    "observations": {
+      "type": "richtext"
+    },
+    "monday": {
+      "type": "boolean"
+    },
+    "tuesday": {
+      "type": "boolean"
+    },
+    "wednesday": {
+      "type": "boolean"
+    },
+    "thursday": {
+      "type": "boolean"
+    },
+    "friday": {
+      "type": "boolean"
+    },
+    "saturday": {
+      "type": "boolean"
+    },
+    "sunday": {
+      "type": "boolean"
+    },
+    "holiday": {
+      "type": "boolean"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "deleted": {
+      "type": "boolean"
+    },
+    "site": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::site.site"
+    }
+  }
+}

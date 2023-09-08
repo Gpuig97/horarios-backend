@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "type_of_holidays",
+  "info": {
+    "singularName": "type-of-holiday",
+    "pluralName": "type-of-holidays",
+    "displayName": "TYPE OF HOLIDAYS",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "internal_code": {
+      "type": "string"
+    },
+    "observations": {
+      "type": "richtext"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "deleted": {
+      "type": "boolean"
+    }
+  }
+}
